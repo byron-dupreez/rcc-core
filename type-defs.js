@@ -8,6 +8,8 @@
 
 /**
  * @typedef {Object} Redis - a Redis adapter instance
+ * @property {string} getDefaultHost - the default redis host
+ * @property {number|string} getDefaultPort - the default redis port
  * @property {function([redisClientOptions]: RedisClientOptions): RedisClient} createClient - a factory function to be
  *           used to create a RedisClient instance
  * @property {function(fnName: string): Function} getClientFunction - returns the named client function
