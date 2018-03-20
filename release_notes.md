@@ -1,5 +1,8 @@
 ## Changes
 
+### 1.0.3
+- Minor fixes for incorrect type definitions
+
 ### 1.0.2
 - Added `getDefaultHost` and `getDefaultPort` to `Redis` type definition
 
