@@ -8,10 +8,10 @@
 
 /**
  * @typedef {Object} Redis - a Redis adapter instance
- * @property {string} getDefaultHost - the default redis host
- * @property {number|string} getDefaultPort - the default redis port
- * @property {function(redisClientOptions: (RedisClientOptions|undefined)): RedisClient} createClient - a factory function to be
- *           used to create a RedisClient instance
+ * @property {string} defaultHost - the default redis host
+ * @property {number} defaultPort - the default redis port
+ * @property {function(redisClientOptions: (RedisClientOptions|undefined)): RedisClient} createClient - a factory
+ *           function to be used to create a RedisClient instance
  * @property {function(fnName: string): Function} getClientFunction - returns the named client function
  * @property {function(fnName: string, fn: Function)} setClientFunction - installs the named client function and sets it
  *           to the given function
@@ -49,17 +49,4 @@
  * @property {function(flush: boolean, callback: (Function|undefined)): *} end - disconnects the client (after flushing,
  *           if flush is true; otherwise ends WITHOUT flushing)
  * @property {function(flush: boolean): Promise.<*>} [endAsync] - disconnects the client (after flushing, if true)
- */
-
-/**
- * @typedef {Object} RedisAware - an object configured with a Redis adapter to use
- * @property {Redis} redis - a Redis adapter to use
- */
-
-/**
- * @typedef {RedisAware} RedisClientAware - an object configured with a RedisClient instance to use
- * @property {RedisClient} redisClient - a previously or newly cached, but "raw" (i.e. UNTESTED) RedisClient instance
- * @property {Promise.<RedisClient>} [redisClientPromise] - an optional promise of an asynchronously tested and usable
- *           RedisClient instance (if redisClient is usable) or a brand new replacement (if redisClient is
- *           unusable)
  */

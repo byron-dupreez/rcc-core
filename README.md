@@ -1,4 +1,4 @@
-# rcc-core v1.0.3
+# rcc-core v1.0.4
 Type definitions for redis adapters and a handful of Redis constants for the 'redis-client-cache' module.
 
 Main module:
@@ -27,4 +27,4 @@ This module's unit tests were developed with and must be run with [tape](https:/
 See the [package source](https://github.com/byron-dupreez/rcc-core) for more details.
 
 ## Changes
-See [release_notes.md](./release_notes.md)
+See [CHANGES.md](./CHANGES.md)
