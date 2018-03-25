@@ -7,7 +7,7 @@
  */
 
 /**
- * @typedef {Object} Redis - a Redis adapter instance
+ * @typedef {Object} RedisAdapter - a Redis adapter instance
  * @property {string} defaultHost - the default redis host
  * @property {number} defaultPort - the default redis port
  * @property {function(redisClientOptions: (RedisClientOptions|undefined)): RedisClient} createClient - a factory
@@ -24,7 +24,7 @@
 
 /**
  * @typedef {Object} RedisClient - a redis client instance
- * @property {function(): Redis} getAdapter - returns the adapter that created this client
+ * @property {function(): RedisAdapter} getAdapter - returns the adapter that created this client
  * @property {function(): boolean} isClosing - whether the client is closing/closed or not
  * @property {function(onConnect: (function()|undefined), onReady: (function()|undefined),
  *           onReconnecting: (function()|undefined), onError: (function(err: Error)|undefined),

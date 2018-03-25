@@ -1,5 +1,8 @@
 ## Changes
 
+### 1.0.6
+- Synchronised `type-defs` module with `redis-client-cache/type-defs`
+
 ### 1.0.4
 - Changes to `Redis` type definition
   - Replaced `getDefaultHost` function with simple `defaultHost` property
