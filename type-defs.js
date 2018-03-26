@@ -8,6 +8,7 @@
 
 /**
  * @typedef {Object} RedisAdapter - a Redis adapter instance
+ * @property {string} adaptee - the name of the underlying Redis implementation, which is being adapted by this adapter
  * @property {string} defaultHost - the default redis host
  * @property {number} defaultPort - the default redis port
  * @property {function(redisClientOptions: (RedisClientOptions|undefined)): RedisClient} createClient - a factory

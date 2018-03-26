@@ -1,5 +1,8 @@
 ## Changes
 
+### 1.0.7
+- Added `adaptee` property to `Redis` type definition
+
 ### 1.0.6
 - Synchronised `type-defs` module with `redis-client-cache/type-defs`
 
