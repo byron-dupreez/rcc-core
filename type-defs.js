@@ -21,6 +21,7 @@
  *           requested key has been moved or not
  * @property {function(err: Error): [string, number|string]} resolveHostAndPortFromMovedError - resolves the new host &
  *           port from the given moved error (precondition: isMovedErr(err) is true)
+ * @property {Error} ReplyError - a constructor function to use to create ReplyError instances for testing
  */
 
 /**
@@ -47,7 +48,6 @@
  * @property {function(key: string): Promise.<*>} [delAsync] - deletes the value for the given key
  * @property {function(pong: string, callback: (Function|undefined)): *} ping - pings the server
  * @property {function(pong: string): Promise.<*>} [pingAsync] - pings the server
- * @property {function(flush: boolean, callback: (Function|undefined)): *} end - disconnects the client (after flushing,
- *           if flush is true; otherwise ends WITHOUT flushing)
- * @property {function(flush: boolean): Promise.<*>} [endAsync] - disconnects the client (after flushing, if true)
+ * @property {function(flush: boolean): *} end - disconnects the client (after flushing, if flush is true; otherwise
+ *           ends WITHOUT flushing)
  */

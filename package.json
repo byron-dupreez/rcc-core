@@ -1,6 +1,6 @@
 {
   "name": "rcc-core",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Type definitions for redis adapters and a handful of Redis constants for the 'redis-client-cache' module",
   "author": "Byron du Preez",
   "license": "Apache-2.0",

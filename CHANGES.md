@@ -1,5 +1,8 @@
 ## Changes
 
+### 1.0.8
+- Removed invalid `endAsync` function from `RedisClient` type definition
+
 ### 1.0.7
 - Added `adaptee` property to `Redis` type definition
 
