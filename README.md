@@ -1,4 +1,4 @@
-# rcc-core v1.0.8
+# rcc-core v1.0.9
 Type definitions for redis adapters and a handful of Redis constants for the 'redis-client-cache' module.
 
 Main module:
